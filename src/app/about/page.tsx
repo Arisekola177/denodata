@@ -41,10 +41,11 @@ const page = () => {
              <iframe src="https://www.youtube.com/embed/8MYwk1UC8G8"
             title="A YouTube video" 
             className="w-full h-[350px]"
-             frameborder="0"
-             allowfullscreen>
+            frameBorder="0"
+            allowFullScreen
+             />
              
-            </iframe>
+           
               </div>
              <div>
                 
