@@ -1,35 +1,3 @@
-// 'use client'
-// import Link from "next/link";
-
-// import { FaArrowUp } from "react-icons/fa";
-
-// const GoToTopButton = () => {
-//   const handleScrollToTop = (e:any) => {
-//     e.preventDefault();
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   };
-
-//   return (
-//     <div className="fixed bottom-4 py-2 px-4 right-4 transition-all duration-300 bg-slate-500 text-white rounded-full shadow-lg hover:bg-slate-700">
-//       <Link
-//         href="/"
-//         onClick={handleScrollToTop}
-        
-//       >
-//         <button>
-//         <FaArrowUp />  
-//         </button>
-       
-//       </Link>
-//     </div>
-//   );
-// };
-
-// export default GoToTopButton;
-
 
 'use client'
 import { useState, useEffect } from "react";
