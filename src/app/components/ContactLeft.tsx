@@ -10,8 +10,8 @@ const ContactLeft = () => {
   return (
     <div className='w-full mt-20'>
     <div className="flex items-center justify-center flex-col gap-2 mb-6">
-    <h2 className=" lg:text-2xl xs:text-xl font-semibold text-red-500">Contact Us</h2>
-      <p className="border-b-[2px] border-red-500 w-48 mx-auto" />
+    <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  font-semibold text-red-500">Contact Us</h2>
+     
      
 </div>
     <div className="lg:w-10/12 w-11/12 mx-auto bg-Dark-Violet text-white rounded-md shadow-md grid grid-cols-1 md:grid-cols-3 xs:p-4 md:p-8 xs:gap-4 md:gap-6">

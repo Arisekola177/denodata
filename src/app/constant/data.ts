@@ -136,3 +136,91 @@ export const serviceData = [
   },
 
  ]
+
+
+ export const services = [
+  {
+    id: 1,
+    service: 'Supermarket, Shopping mall & Retail outlet Set Up.'
+  },
+  {
+    id: 2,
+    service: 'Create and implement efficient business processes.'
+  },
+  {
+    id: 3,
+    service: 'Routine inventory and stock audit.'
+  },
+  {
+    id: 4,
+    service: 'Recruiting and recommendation experience hands.'
+  },
+  {
+    id: 5,
+    service: 'Staff training: managers, cashiers, merchandisers and inventory team.'
+  },
+  {
+    id: 6,
+    service: 'Shop floor and warehouse maintenance layout and arrangement.'
+  },
+  {
+    id: 7,
+    service: 'Loss control and prevention techniques.'
+  },
+  {
+    id: 8,
+    service: 'Product display, shelving and merchandising to drive high sales.'
+  },
+  {
+    id: 9,
+    service: 'Suppliers contact, Product list and procurement at profitable sources and negotiation.'
+  },
+  {
+    id: 10,
+    service: 'Competitors price survey.'
+  },
+  {
+    id: 11,
+    service: 'Other retail consulting.'
+  },
+
+ ]
+
+
+
+ export const achievements = [
+  {
+    id: 1,
+    service: 'We have set up over 50 retails stores across Lagos, Ogun, Akwa Ibom, and Oyo States in our 13 years of existence.'
+  },
+  {
+    id: 2,
+    service: 'We have Entrusted with the resposibilty of overseeing 70% of retail stores and supermarket set up by the company through our retainership agreements.'
+  },
+  {
+    id: 3,
+    service: 'We implemented controls designed to reduce overall losses and shrinkage levels to less than 2% for our clients.'
+  },
+  {
+    id: 4,
+    service: 'We Led and participated in executive leadership walkthroughs, giving insight into field strengths and opportunities.'
+  },
+  {
+    id: 5,
+    service: 'We conducted competitors sales and price research for our clients on quaterly basis in return heighten profit margin to not less than 20%.'
+  },
+  {
+    id: 6,
+    service: 'We prepared biannual expenses and maintenance budgets for corporate management renewal.'
+  },
+  {
+    id: 7,
+    service: 'Hired, trained, and coordinated staff of over 120 sales team members successfully.'
+  },
+  {
+    id: 8,
+    service: 'Assisted in data entry, freight deliveries, negative, and pack away procedures for accurate POS inventoryto avoid adminstrative errors.'
+  },
+ 
+
+ ]

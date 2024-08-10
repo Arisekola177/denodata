@@ -20,8 +20,8 @@ const Testimonials = () => {
   return (
     <div className="w-full mt-20">
                 <div className="flex items-center justify-center flex-col gap-2 mb-6">
-                 <h2 className=" xl:text-3xl xs:text-xl font-semibold text-red-500">Testimonials</h2>
-                   <p className="border-b-[2px] border-red-500 w-48 mx-auto" />
+                 <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  font-semibold text-red-500">Testimonials</h2>
+                
                   
              </div>
           <div className="w-9/12 mx-auto">

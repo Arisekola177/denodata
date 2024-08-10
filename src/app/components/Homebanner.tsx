@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import pattern from '../../../public/images/bg-pattern-intro-right-desktop.svg';
 import pattern2 from '../../../public/images/bg-pattern-intro-left-desktop.svg';
-import desktop from '../../../public/images/home2.jpg';
+import desktop from '../../../public/images/desktop.png';
 import Link from 'next/link';
 
 const Homebanner = () => {
@@ -19,14 +19,14 @@ const Homebanner = () => {
       <hr className='w-20 border-b-[2px] border-red-500' />
         <h1 className='xl:text-5xl lg:text-3xl md:text-xl xs:text-2xl font-semibold '> Transforming Supermarkets into <br /> Efficient  Profitable Enterprises</h1>
         <p className='lg:text-lg xs:text-sm font-medium leading-6'>
-        At Denodata, we provide expert solutions for every aspect of supermarket management, including comprehensive setup, efficient inventory management, and professional staff training. Our services are designed to transform your supermarket into a streamlined, profitable business
+         Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management procurement guidelines and recommendations.
         </p>
         <div className=" bg-red-500 hover:bg-red-950 w-32 rounded-md py-2">
               <Link className="px-2 mx-auto flex items-center justify-center text-sm" href='/about'>Read More</Link> 
           </div>
       </div>
       
-          <div className='xl:w-[500px] md:w-[600px] w-full border-t-[4px] border-l-[4px] border-red-500 xs:mt-10 md:mt-0 xl:mt-10  '>
+          <div className='xl:w-[500px] md:w-[600px] w-full xs:mt-10 md:mt-0 xl:mt-10  '>
             <Image src={desktop} alt="pattern" className='p-2'  />
           </div>
      

@@ -7,9 +7,9 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="w-full mt-20">
-                <div className="flex items-center justify-center flex-col gap-2 mb-6">
-                 <h2 className=" xl:text-2xl xs:text-xl font-semibold text-red-500">About Us</h2>
-                   <p className="border-b-[2px] border-red-500 w-48 mx-auto" />
+                <div className="flex items-center justify-center flex-col gap-2 mb-10">
+                 <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  font-semibold text-red-500">About Us</h2>
+                  
                   
              </div>
            <div className="xl:w-10/12 xs:w-11/12 px-8 py-20 bg-Dark-Violet mx-auto grid xs:grid-cols-1 md:grid-cols-2 md:gap-6 xs:gap-3 rounded-md shadow-md text-white relative">
@@ -18,17 +18,10 @@ const About = () => {
            <span className="text-red-500">Business Solutions</span>  
              </h2>
             <p className="text-justify py-4 leading-8 xs:text-xs xl:text-sm">
-            With over 13 years of experience, we have successfully set up more 
-            than 80 retail stores across Lagos, Ogun, Akwa Ibom, Oyo, and Delta states.
-             Our expertise extends to managing 70% of the retail stores and supermarkets
-              established under our retainership agreements, implementing controls that 
-              reduced losses and shrinkage to under 2%. We lead strategic executive 
-              walkthroughs, conduct quarterly competitor research to enhance profit 
-              margins by at least 20%, and prepare biannual budgets for corporate management approval.
-               Our dedicated team of over 120 sales professionals, trained and coordinated by us,
-                has driven our success, 
-            alongside our meticulous handling of data entry, freight deliveries, 
-            and inventory management to ensure accuracy and efficiency.
+            Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail
+             objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management 
+             procurement guidelines and recommendations. We keep you abreast of the latest retail information and techniques in retail industry. Denodata Business Solutions has a dedicated team of highly experienced professionals from various aspects of the retail industry bringing their rich ideas innovations, skills practical methods and solutions to retail challenges in order to drive turnover and on the other hand reducing losses to the barest minimum.
+      
              </p>
 
              <div className="bg-red-500 w-32 rounded-md p-2">

@@ -27,9 +27,9 @@ const Navbar = () => {
               </Link>
              
                <div className="hidden md:flex text-[10px] font-medium uppercase items-center gap-6">
-                <Link className="hover:font-bold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/'>Home</Link>
-                <Link className="hover:font-bold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/about'>About</Link>
-                <Link className="hover:font-bold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/service'>Services</Link>
+                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/'>Home</Link>
+                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/about'>About</Link>
+                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/service'>Services</Link>
                 <div className="border-[2px] border-white bg-red-500 hover:bg-red-950 py-2 rounded-md">
                 <Link className=" px-6 text-white font-semibold" href='/contact'>Contact</Link> 
                 </div>

@@ -15,10 +15,10 @@ import Image from "next/image";
 
 const Clients = () => {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-20 shadow-lg py-10">
       <div className="w-9/12 mx-auto flex flex-col items-center justify-center">
-        <h2 className="md:text-2xl xs:text-lg text-red-500 font-semibold mb-4">Our Clients</h2>
-        <p className="border-b-[2px] border-red-500 w-52 mx-auto" />
+        <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  text-red-500 font-semibold mb-4">Our Clients</h2>
+       
         <Carousel  className="mt-10">
           <CarouselContent className="flex">
             {clients.map((item, index) => (
