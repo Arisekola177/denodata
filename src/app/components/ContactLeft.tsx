@@ -11,7 +11,7 @@ const Mapping = dynamic(() => import('./Mapping'), { ssr: false });
 const ContactLeft = () => {
   return (
     <motion.div 
-    variants={staggerContainer}
+    variants={staggerContainer(0.2, 0.5)}
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
