@@ -20,12 +20,12 @@ const Page = () => {
         </div>
       <div className='w-9/12 mx-auto '>
            <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4 mt-10'>
-               <div className='xl:w-[500px] w-full'>
+               <div className='xl:w-[500px]'>
                  <Image src={service} alt='service' className='w-full' />
                </div>
                <div className=''>
-                <h2 className='lg:text-5xl xs:text-center md:text-start text-2xl lg:leading-normal font-bold text-slate-800'>Improve Your <br />
-                 <span className='text-red-500'> Operations and</span> <br /> Drive Business Value</h2>
+                <h2 className='lg:text-5xl xs:text-center md:text-start text-2xl  font-bold text-slate-800'>Grow Your <br />
+                 <span className='text-red-500'> Business</span> <br /> With Us.</h2>
                   <p className=" text-start lg:leading-6 mt-4 xs:text-center md:text-start text-sm lg:text-lg">
            Denodata Business Solutions offers retail services to our clients in line with industry standards, 
            in areas where the requisite  capabilities don not exist, we adopt partnership with stakeholders 

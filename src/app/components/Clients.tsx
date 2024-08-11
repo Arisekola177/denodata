@@ -9,17 +9,26 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
+import {motion} from 'framer-motion'
 import { clients } from "../constant/data";
 import Image from "next/image";
+import { fadeIn, staggerContainer } from "../utils/motion";
+import { TypingText } from "./CustomTexts";
 
 const Clients = () => {
   return (
-    <div className="w-full mt-20 shadow-lg py-10">
-      <div className="w-9/12 mx-auto flex flex-col items-center justify-center">
-        <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  text-red-500 font-semibold mb-4">Our Clients</h2>
-       
-        <Carousel  className="mt-10">
+    <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className="w-full mt-20 shadow-lg py-10">
+      
+          <TypingText title="Our Clients" textStyles="text-center mb-10"/>
+       <motion.div 
+       variants={fadeIn('right', 'tween', 0.2, 3)}
+       className="w-9/12 mx-auto flex flex-col items-center justify-center">
+        <Carousel className="mt-10">
           <CarouselContent className="flex">
             {clients.map((item, index) => (
               <CarouselItem key={index} className="basis-1/3 flex-shrink-0 flex justify-center">
@@ -36,8 +45,8 @@ const Clients = () => {
           <CarouselNext className="text-red-500 hover:bg-red-500 hover:text-white" />
           <CarouselPrevious className="text-red-500 hover:bg-red-500 hover:text-white" />
         </Carousel>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

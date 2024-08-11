@@ -1,3 +1,4 @@
+'use client'
 import {
     Carousel,
     CarouselContent,
@@ -15,22 +16,30 @@ import {
   } from "@/components/ui/card"
   import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { testimonials } from "../constant/data"
+import { fadeIn, slideIn, staggerContainer } from "../utils/motion"
+import {motion} from 'framer-motion'
+import { TypingText } from "./CustomTexts"
 
 const Testimonials = () => {
   return (
-    <div className="w-full mt-20">
-                <div className="flex items-center justify-center flex-col gap-2 mb-6">
-                 <h2 className=" xs:text-xl md:text-2xl lg:text-3xl  font-semibold text-red-500">Testimonials</h2>
-                
-                  
-             </div>
-          <div className="w-9/12 mx-auto">
+    <motion.div 
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className="w-full mt-20">
+             <TypingText title="Testimonials" textStyles="text-center mb-10"/>
+          <motion.div 
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className="w-9/12 mx-auto">
           <Carousel>
-            <CarouselContent>
+            <CarouselContent >
                 {
                     testimonials.map((item:any) => (
                         <CarouselItem key={item.name} className="xl:basis-1/3 md:basis-2/3 xs:w-full ">
-                  <Card className="border-[2px] border-gray-500 rounded-md shadow-md hover:bg-Dark-Violet cursor-pointer duration-300 hover:text-white md:h-[250px] ">
+                  <Card 
+                  
+                  className="border-[2px] border-gray-500 rounded-md shadow-md hover:bg-Dark-Violet cursor-pointer duration-300 hover:text-white md:h-[250px] ">
                     <CardHeader>
                     <div className="flex items-center justify-center gap-2">
                     <Avatar>
@@ -57,8 +66,8 @@ const Testimonials = () => {
          < CarouselPrevious className="text-red-500 hover:bg-red-500 hover:text-white"/>
        </Carousel>
      
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
   )
 }
 

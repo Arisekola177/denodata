@@ -5,7 +5,8 @@ import Image from "next/image"
 import { useState } from "react"
 import { CiMenuFries } from "react-icons/ci"
 import { IoClose } from "react-icons/io5"
-
+import { fadeIn, staggerContainer } from "../utils/motion"
+import {motion} from 'framer-motion'
 const Navbar = () => {
 
   const [open, setOpen] = useState(false)
@@ -15,14 +16,26 @@ const Navbar = () => {
     setOpen(!open)
   }
   return (
-    <div className="w-ful text-slate-800 py-4">
-        <div className="lg:w-10/12 xs:w-11/12 mx-auto flex justify-between items-center">
+    <motion.div 
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className="w-ful text-slate-800 py-4">
+        <motion.div 
+         variants={fadeIn('up', 'tween', 0.2, 2)}
+        className="lg:w-10/12 xs:w-11/12 mx-auto flex justify-between items-center">
           <Link href='/'>
              <div className="flex items-center hover:border-b-[2px] border-slate-800 cursor-pointer">
-              <div className="w-[30px]">
+              <div className="w-[40px]">
                  <Image src={logo} alt="logo" className="w-full" />
               </div>
-              <h1 className="uppercase font-bold xs:text-sm md:text-sm lg:text-lg mt-2">Denodata</h1>
+              <div className="flex flex-col mt-3">
+             <h1 className="uppercase font-bold xs:text-[14px] lg:text-[18px] leading-none">Denodata</h1>
+              <p className="text-[8px] font-mono mt-0">The Retail Store Consultants</p>
+              </div>
+
+        
               </div>
               </Link>
              
@@ -75,8 +88,8 @@ const Navbar = () => {
            
               </div>
               
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
   )
 }
 

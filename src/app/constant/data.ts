@@ -1,42 +1,30 @@
 
-import software from '../../../public/images/software3.jpg'
-import inventory from '../../../public/images/inventory2.jpg'
-import consultancy from '../../../public/images/consult.jpg'
-import setup from '../../../public/images/set.jpg'
-import training from '../../../public/images/train.jpg'
-import suppliers from '../../../public/images/suppliers.jpg'
 
 
 export const serviceData = [
      {
         id: "5676849392",
-        image: consultancy, 
         title: "Retail Store Consultancy ",
         description:"In today's dynamic retail landscape, businesses face numerous challenges and opportunities. At Denodata Business Solutions (DBS) Limited, our retail store consultancy services are designed to help retailers navigate these complexities, ensuring they remain competitive and achieve sustainable growth. Our consultancy involves providing expert advice and tailored solutions to retail businesses to improve their operations, enhance customer experiences, and boost profitability. Our consultancy services cover a wide range of areas,from store layout and design to inventory management and customer engagement strategies.",
      },
      {
         id: "56768459392",
-        image: setup,  
         title: "Supermarket Set Up ",
         description:"Setting up a supermarket is a complex and multifaceted process that requires careful planning, strategic thinking, and expert execution. At Denodata Business Solutions (DBS) Limited, we specialize in providing end-to-end supermarket setup services that ensure your new venture is positioned for success from day one. Supermarket set up involves a series of coordinated activities designed to establish a new supermarket, from initial planning and design to final implementation and launch. This process encompasses location selection, store layout design, procurement of equipment, inventory management, staffing, and marketing strategies. "   },
      {
         id: "567684349392",
-        image: inventory,  
         title: "Inventory Management ",
         description:"Effective inventory management is crucial for the success of any retail business.  We offer comprehensive inventory management services designed to optimize your inventory processes, reduce costs, and improve customer satisfaction. Inventory management involves the oversight of goods from the point of purchase to the point of sale. It includes activities such as ordering, storing, tracking, and controlling inventory to ensure that the right products are available at the right time and in the right quantities. "  },
      {
         id: "5676843549392",
-        image: software, 
         title: "Retail Software ",
         description:"Retail software solutions are essential for the modern retail business, providing tools that enhance efficiency, streamline operations, and improve customer satisfaction. At Denodata Business Solutions (DBS) Limited, we offer cutting-edge retail software solutions tailored to meet the unique needs of your business. Retail software encompasses a wide range of applications designed to manage various aspects of retail operations, including point of sale (POS) systems, inventory management, customer relationship management (CRM), and analytics. These tools help retailers optimize processes, make data-driven decisions, and deliver a seamless shopping experience."   },
      {
         id: "5676843649392",
-        image:training,
         title: "Staff Recruitment & Training ",
         description:"Effective staff recruitment and training are critical for the success of any business. We offer comprehensive staff recruitment and training services designed to help you build a skilled and motivated workforce that drives your business forward. Staff recruitment involves identifying, attracting, and hiring the right talent for your organization. At DBS Limited, we take a strategic approach to recruitment, understanding your business needs and culture to find candidates who are not only qualified but also a good fit for your team."  },
      {
         id: "5676863749392",
-        image: suppliers, 
         title: "Suppliers Contacts & Product List ",
         description:"Managing supplier contacts and maintaining an up-to-date product list are essential components of efficient business operations. At Denodata Business Solutions (DBS) Limited, we offer comprehensive services to help you streamline supplier management and maintain an accurate product inventory. Effective supplier management involves building strong relationships with your suppliers and ensuring smooth communication. At DBS Limited, we provide tools and strategies to manage your supplier contacts efficiently. We help you maintain a centralized database of supplier information, including contact details, product offerings, pricing, and delivery schedules. This ensures that you have easy access to the information you need to make informed purchasing decisions. Maintaining an accurate and up-to-date product list is crucial for inventory management and customer satisfaction."  }
   ];
