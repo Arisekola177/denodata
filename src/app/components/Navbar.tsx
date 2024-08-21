@@ -31,7 +31,7 @@ const Navbar = () => {
                  <Image src={logo} alt="logo" className="w-full" />
               </div>
               <div className="flex flex-col mt-3">
-             <h1 className="uppercase font-bold xs:text-[14px] lg:text-[18px] leading-none">Denodata</h1>
+             
               <p className="text-[8px] font-mono mt-0">The Retail Store Consultants</p>
               </div>
 
