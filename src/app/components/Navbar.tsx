@@ -25,7 +25,9 @@ const Navbar = () => {
          variants={fadeIn('up', 'tween', 0.2, 2)}
         className="lg:w-10/12 xs:w-11/12 mx-auto flex justify-between">
               <div className="md:w-[50px] xs:w-[30px]">
+                <Link href='/'>
                 <Image src={logo} alt="logo" />
+                </Link>
               </div>
                 <div className="hidden md:flex text-[10px] font-semibold items-center gap-6">
                   <Link className="hover:font-bold hover:underline hover:underline-offset-8 duration-300" href='/'>Home</Link>
