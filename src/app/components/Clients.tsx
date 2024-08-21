@@ -14,6 +14,7 @@ import { clients } from "../constant/data";
 import Image from "next/image";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
+import Divider from "./Divider2";
 
 const Clients = () => {
   return (
@@ -22,7 +23,7 @@ const Clients = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-    className="w-full mt-20 shadow-lg py-10">
+    className="w-full mt-20">
       
           <TypingText title="Our Clients" textStyles="text-center mb-10"/>
        <motion.div 
@@ -46,6 +47,7 @@ const Clients = () => {
           <CarouselPrevious className="text-red-500 hover:bg-red-500 hover:text-white" />
         </Carousel>
       </motion.div>
+      <Divider />
     </motion.div>
   );
 };

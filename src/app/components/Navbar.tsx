@@ -11,7 +11,6 @@ const Navbar = () => {
 
   const [open, setOpen] = useState(false)
 
-
   const ToggleNav = () => {
     setOpen(!open)
   }
@@ -24,34 +23,25 @@ const Navbar = () => {
     className="w-ful text-slate-800 py-4">
         <motion.div 
          variants={fadeIn('up', 'tween', 0.2, 2)}
-        className="lg:w-10/12 xs:w-11/12 mx-auto flex justify-between items-center">
-          <Link href='/'>
-             <div className="flex items-center hover:border-b-[2px] border-slate-800 cursor-pointer">
-              <div className="w-[40px]">
-                 <Image src={logo} alt="logo" className="w-full" />
+        className="lg:w-10/12 xs:w-11/12 mx-auto flex justify-between">
+              <div className="md:w-[50px] xs:w-[30px]">
+                <Image src={logo} alt="logo" />
               </div>
-              <div className="flex flex-col mt-3">
-             <h1 className="uppercase font-bold xs:text-[14px] lg:text-[18px] leading-none">Denodata</h1>
-              <p className="text-[8px] font-mono mt-0">The Retail Store Consultants</p>
-              </div>
-
-        
-              </div>
-              </Link>
-             
-               <div className="hidden md:flex text-[10px] font-medium uppercase items-center gap-6">
-                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/'>Home</Link>
-                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/about'>About</Link>
-                <Link className="hover:font-bold font-semibold hover:text-red-500 hover:border-b-[2px] border-red-500 duration-300" href='/service'>Services</Link>
-                <div className="border-[2px] border-white bg-red-500 hover:bg-red-950 py-2 rounded-md">
-                <Link className=" px-6 text-white font-semibold" href='/contact'>Contact</Link> 
+                <div className="hidden md:flex text-[10px] font-semibold items-center gap-6">
+                  <Link className="hover:font-bold hover:underline hover:underline-offset-8 duration-300" href='/'>Home</Link>
+                  <Link className="hover:font-bold hover:underline hover:underline-offset-8 duration-300" href='/about'>About Us</Link>
+                  <Link className="hover:font-bold hover:underline hover:underline-offset-8 duration-300" href='/service'>Service</Link>
+                <div className="border-[2px] bg-[#3E3E70] hover:bg-slate-600 py-2 rounded-md">
+                <Link className=" px-6 text-white  font-semibold" href='/contact'>Contact</Link> 
                 </div>
                 
               </div>
+
+
               <div onClick={ToggleNav} className="block md:hidden">
                 {
                   open ?  (null) : 
-                  (<CiMenuFries />)
+                  (<CiMenuFries className="text-xl" />)
                 }
 
            <div className={`absolute z-[50] top-5 left-0 w-[80%] bg-white transition-all shadow-md duration-500 ease-in-out px-3 py-4 ${open? 'left-0 ':'left-[-490px]'}`}>
@@ -74,7 +64,7 @@ const Navbar = () => {
                <Link className='text-[10px]' href='/'>Home</Link>
                <Link className='text-[10px]' href='/about'>About</Link>
                <Link className='text-[10px]' href='/service'>Services</Link>
-               <Link className='text-[10px] bg-red-500 text-white rounded-md py-1 px-3' href='/contact'>Contact</Link>
+               <Link className='text-[10px] bg-[#3E3E70] text-white rounded-md py-1 px-3' href='/contact'>Contact</Link>
                </div>
                </div>
 

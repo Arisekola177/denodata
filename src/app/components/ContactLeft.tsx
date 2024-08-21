@@ -19,7 +19,7 @@ const ContactLeft = () => {
        <TypingText title="Contact Us" textStyles="text-center mb-10"/>
     <motion.div 
      variants={fadeIn('left', 'tween', 0.2, 2)}
-     className="lg:w-10/12 w-11/12 mx-auto bg-Dark-Violet text-white rounded-md shadow-md grid grid-cols-1 md:grid-cols-3 xs:p-4 md:p-8 xs:gap-4 md:gap-6">
+     className="lg:w-10/12 w-11/12 mx-auto bg-[#3E3E70] text-white rounded-md shadow-md grid grid-cols-1 md:grid-cols-3 xs:p-4 md:p-8 xs:gap-4 md:gap-6">
       <motion.div 
       variants={slideIn('up', 'tween', 0.2, 3)}
       className="col-span-1 flex  flex-col gap-3 justify-center">

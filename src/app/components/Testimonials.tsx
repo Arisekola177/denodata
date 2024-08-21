@@ -20,6 +20,7 @@ import { fadeIn, slideIn, staggerContainer } from "../utils/motion"
 import {motion} from 'framer-motion'
 import { TypingText } from "./CustomTexts"
 
+
 const Testimonials = () => {
   return (
     <motion.div 
@@ -67,6 +68,7 @@ const Testimonials = () => {
        </Carousel>
      
         </motion.div>
+    
     </motion.div>
   )
 }

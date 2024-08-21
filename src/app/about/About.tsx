@@ -10,13 +10,13 @@ const About = () => {
   return (
     <motion.div
     variants={staggerContainer(0.2, 0.5)}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0.25 }}
+    initial='hidden'
+    whileInView='show'
+    viewport={{once: false, amount: 0.25}}
     className='w-full overflow-hidden'>
         <motion.div 
           
-        className='relative h-[300px] bg-Dark-Violet '>
+          className='relative h-[200px] bg-[#3E3E70] '>
            <div className='absolute xs:top-1/2 md:top-1/3 left-1/3 flex flex-col gap-4'>
            <h1 className='md:text-4xl xs:text-xl font-bold text-white'>About Us</h1>
            <div className='flex items-center md:gap-4 xs:gap-2 text-white'>
@@ -27,12 +27,12 @@ const About = () => {
         </div>
         </motion.div>
  
-        
+        <div className='bg-[#F6F8FF]'>
         <motion.div 
         variants={slideIn('left', 'tween', 0.2, 2)}
-        className='lg:w-10/12 xs:w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-8'>
+        className='lg:w-10/12 xs:w-11/12 mx-auto grid md:mt-4 xs:mt-0 grid-cols-1 md:grid-cols-2 gap-6 py-8'>
              <div className=''>
-              <TypingText title="About Us" textStyles="text-center mb-10"/>
+              <TypingText title="About Us" textStyles="text-center mb-5"/>
                 <div className='text-justify font-medium'>
                 Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail
              objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management 
@@ -57,28 +57,29 @@ const About = () => {
                 
         </div>
         </motion.div>
-
+        
+        </div>
          <div 
         
-         className='lg:w-10/12 md:w-11/12 mx-auto mt-5'>
+         className='lg:w-10/12 md:w-11/12 w-full xs:px-4 md:px-0 mx-auto mt-5'>
             <Count />
       <motion.div 
           variants={fadeIn('right', 'tween', 0.2, )}
          className='mt-5 grid grid-cols-1 md:grid-cols-3 gap-4 xs:px-4 md:px-0'>
-             <div className='bg-Dark-Violet text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
+             <div className='bg-[#3E3E70] text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
                   <h1 className='lg:text-2xl text-lg font-bold text-center text-red-500'>Vision</h1>
                   <p className='py-4 xl:text-sm xs:text-xs text-center'>
                      The company's vision is to be excellent company built on innovation and partnership in a view to boost your profitabilty drive in your retail business.
                   </p> 
               </div>
-             <div className='bg-Dark-Violet text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
+             <div className='bg-[#3E3E70] text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
                 <h1 className='lg:text-2xl text-lg font-bold text-center text-red-500'>Mission </h1>
                 <p className='py-4 xl:text-sm xs:text-xs text-center'>
                 Our mission is to revolutionize the retail industry by offering comprehensive consulting, advanced software solutions, and expert training services. 
                 We are committed to helping our clients optimize their operations, improve profitability, and adapt to the evolving market landscape.
                 </p>
              </div>
-             <div className='bg-Dark-Violet text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
+             <div className='bg-[#3E3E70] text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
                 <h1 className='lg:text-2xl text-lg font-bold text-center text-red-500'>Social Responsibilty </h1>
                 <p className='py-4 xl:text-sm xs:text-xs text-center'>
                 Denodata is committed to supporting local communities, promoting environmental sustainability, ensuring employee well-being, 

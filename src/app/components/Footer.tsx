@@ -17,7 +17,7 @@ const Footer = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-    className="w-full bg-very-dark-violet text-white mt-16">
+    className="w-full bg-[#3E3E70] text-white mt-16">
       <motion.div 
          variants={slideIn('down', 'tween', 0.2, 1)}
       className="lg:w-10/12 xs:w-11/12 mx-auto flex xs:flex-col md:flex-row gap-4 justify-between py-16 px-8">

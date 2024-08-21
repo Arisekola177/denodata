@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-      <div className='md:col-span-1 xs:col-span-2 flex flex-col gap-4 bg-Dark-Violet xs:px-4 xl:px-8 rounded-md shadow-md py-16 text-white'>
+      <div className='md:col-span-1 xs:col-span-2 flex flex-col gap-4 bg-[#3E3E70]  xs:px-4 xl:px-8 rounded-md shadow-md py-16 text-white'>
         <p className='uppercase'>Let's Talk</p>
         <h2 className='xl:text-2xl md:text-lg '>Speak With Us</h2>
         <div className='flex items-center gap-4'>

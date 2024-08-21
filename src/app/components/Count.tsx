@@ -4,10 +4,10 @@ import CountUp from 'react-countup';
 const CounterSection = () => {
   return (
     <section className="w-full  py-8 flex flex-col items-center animate-fadeIn">
-      <h2 className='text-center lg:text-2xl text-slate-800 xs:text-xl mb-3 font-semibold'>Our Scorecard</h2>
-      <div className="w-full flex items-center justify-between">
+      <h2 className='text-center lg:text-2xl text-slate-800 xs:text-xl mb-6 font-semibold'>Our Scorecard</h2>
+      <div className="w-full flex flex-col md:flex-row gap-3 items-center justify-between">
         {/* Listings Counter */}
-        <div className="w-full px-4 mb-4">
+        <div className="w-full px-4 mb-4 shadow-md bg-white py-2 hover:shadow-lg cursor-pointer">
           <div className="text-center">
             <div className="xl:text-4xl text-2xl font-bold text-red-500">
               <CountUp end={50} duration={2} separator="," />
@@ -17,7 +17,7 @@ const CounterSection = () => {
           </div>
         </div>
         {/* Happy Customers Counter */}
-        <div className="w-full  px-4 mb-4">
+        <div className="w-full  px-4 mb-4 shadow-md bg-white py-2 hover:lg cursor-pointer">
           <div className="text-center">
             <div className="xl:text-4xl text-2xl font-bold text-red-500">
               <CountUp end={50} duration={2} separator="," />
@@ -27,7 +27,7 @@ const CounterSection = () => {
           </div>
         </div>
         {/* Years of Experience Counter */}
-        <div className="w-full  px-4 mb-4">
+        <div className="w-full  px-4 mb-4 shadow-md bg-white py-2 hover:lg cursor-pointer">
           <div className="text-center">
             <div className="xl:text-4xl text-2xl font-bold text-red-500">
               <CountUp end={13} duration={2} separator="," />

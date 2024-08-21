@@ -5,6 +5,8 @@ import arrow from '../../../public/images/arrow.png'
 import { fadeIn, slideIn, staggerContainer } from "../utils/motion"
 import { motion } from "framer-motion";
 import { TypingText } from "./CustomTexts";
+import Divider from "./Divider2"
+import Divider1 from "./Divider"
 
 const Achievement = () => {
   return (
@@ -13,11 +15,14 @@ const Achievement = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-    className="w-full mt-20 shadow-lg py-10">
-           <TypingText title="Our Achievements & Accomplishments" textStyles="text-center mb-10"/>
+    className="w-full mt-20">
+          <Divider />
+          <div className="bg-[#F6F8FF]">
+          <TypingText title="Our Achievements & Accomplishments" textStyles="text-center py-6 xs:mb-5 md:mb-10"/>
          <motion.div 
           variants={fadeIn('right', 'tween', 0.2, 2)}
-         className="w-10/12 mx-auto grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          className="w-10/12 mx-auto py-6 grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xs:gap-4 md:gap-8 ">
+         
          {
               achievements.map((achievement:any) => (
                 <motion.div 
@@ -28,7 +33,10 @@ const Achievement = () => {
                 </motion.div>
               ))
            }
+       
         </motion.div>
+         </div>
+         <Divider1 />
     </motion.div>
   )
 }
