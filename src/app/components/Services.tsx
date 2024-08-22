@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from '../utils/motion';
 import {TypingText} from '../components/CustomTexts'
 import Divider from './Divider';
+import Link from 'next/link';
 const Services = () => {
 
   return (
@@ -37,15 +38,32 @@ const Services = () => {
         <motion.div 
         variants={fadeIn ('up', 'tween', 0.2, 3)}
         className="grid xs:grid-cols-1 md:grid-cols-2 gap-4 xs:px-4 md:px-0 group">
-          
-                <motion.div 
+               <motion.div 
                 variants={fadeIn ('up', 'tween', 0.2, 3)}
                 className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
                   <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
-                  <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
+                  <p className='text-xs'>In today's dynamic retail landscape, businesses face numerous challenges and opportunities. At Denodata Business Solutions (DBS) Limited, our retail store consultancy services are designed to help retailers navigate these complexities, ensuring they remain competitive and achieve sustainable growth.</p>
+                </motion.div>
+                <motion.div 
+                variants={fadeIn ('up', 'tween', 0.2, 3)}
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300  cursor-pointer'>
+                  <div className='w-[80px]'>
+                     <Image src={component} alt='component' />
+                  </div>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Supermarket Set Up</h2>
+                  <p className='text-xs'>Setting up a supermarket is a complex and multifaceted process that requires careful planning, strategic thinking, and expert execution. At Denodata Business Solutions (DBS) Limited, we specialize in providing end-to-end supermarket setup services that ensure your new venture is positioned for success from day one. </p>
+                </motion.div>
+                <motion.div 
+                variants={fadeIn ('up', 'tween', 0.2, 3)}
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
+                  <div className='w-[80px]'>
+                     <Image src={component} alt='component' />
+                  </div>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Inventory Management</h2>
+                  <p className='text-xs'>Effective inventory management is crucial for the success of any retail business.  We offer comprehensive inventory management services designed to optimize your inventory processes, reduce costs, and improve customer satisfaction.  </p>
                 </motion.div>
                 
                 <motion.div 
@@ -54,36 +72,14 @@ const Services = () => {
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
-                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
-                  <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Software</h2>
+                  <p className='text-xs'>Retail software solutions are essential for the modern retail business, providing tools that enhance efficiency, streamline operations, and improve customer satisfaction.  </p>
                 </motion.div>
-              
-              
-                <motion.div 
-                variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
-                  <div className='w-[80px]'>
-                     <Image src={component} alt='component' />
-                  </div>
-                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
-                  <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
-                </motion.div>
-              
-              
-                <motion.div 
-                variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300  cursor-pointer'>
-                  <div className='w-[80px]'>
-                     <Image src={component} alt='component' />
-                  </div>
-                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
-                  <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
-                </motion.div>
-              
-              <button className='bg-red-500 w-40 mx-auto text-white py-2 px-4 mt-5 rounded-md hover:bg-red-800'>
+              <Link href='/service'>
+              <button  className='bg-red-500 w-32 mx-auto text-xs text-white py-2 px-4 mt-5 rounded-md hover:bg-red-800'>
                 Read More
               </button>
-               
+              </Link> 
          
         </motion.div>
       <motion.div
