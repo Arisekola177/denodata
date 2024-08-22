@@ -40,43 +40,43 @@ const Services = () => {
           
                 <motion.div 
                 variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 md:py-10 xs:px-2 md:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
-                  <h2 className='font-semibold text-lg'>Retail Store Consultancy</h2>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
                   <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
                 </motion.div>
                 
                 <motion.div 
                 variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 md:py-10 xs:px-2 md:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer '>
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer '>
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
-                  <h2 className='font-semibold text-lg'>Retail Store Consultancy</h2>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
                   <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
                 </motion.div>
               
               
                 <motion.div 
                 variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 md:py-10 xs:px-2 md:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300 cursor-pointer'>
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
-                  <h2 className='font-semibold text-lg'>Retail Store Consultancy</h2>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
                   <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
                 </motion.div>
               
               
                 <motion.div 
                 variants={fadeIn ('up', 'tween', 0.2, 3)}
-                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 md:py-10 xs:px-2 md:px-4 gap-2 hover:shadow-2xl duration-300  cursor-pointer'>
+                className='flex flex-col bg-white h-auto rounded-md shadow-lg items-start xs:py-5 lg:py-10 xs:px-2 lg:px-4 gap-2 hover:shadow-2xl duration-300  cursor-pointer'>
                   <div className='w-[80px]'>
                      <Image src={component} alt='component' />
                   </div>
-                  <h2 className='font-semibold text-lg'>Retail Store Consultancy</h2>
+                  <h2 className='font-semibold xs:text-lg md:text-sm lg:text-lg'>Retail Store Consultancy</h2>
                   <p className='text-xs'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque minus sunt facere illum iste excepturi enim dolores molestiae optio, repellendus voluptatum doloremque eveniet praesentium placeat ipsum natus! Numquam, iusto? </p>
                 </motion.div>
               

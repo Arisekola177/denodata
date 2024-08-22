@@ -28,11 +28,11 @@ const Homebanner = () => {
     <div className='w-10/12 mx-auto grid xs:grid-cols-1 md:grid-cols-2 gap-10'>
       <motion.div 
       variants={slideIn('left', 'tween', 0.2, 1)}
-      className='flex w-full xs:mt-6 md:mt-16 flex-col gap-6'>
-      <hr className='w-20 border-b-[2px] border-red-500' />
+      className='flex w-full xs:mt-6 lg:mt-16 flex-col gap-6'>
+      <hr className='w-20 border-b-[2px] border-red-500' /> 
         <motion.h1 
         variants={fadeIn('left', 'tween', 0.2, 1)}
-        className='xl:text-4xl lg:text-3xl md:text-xl xs:text-2xl text-blue-800 font-semibold'>Transforming Supermarkets <br/>
+        className='xl:text-4xl lg:text-3xl md:text-lg xs:text-2xl text-blue-800 font-semibold'>Transforming Supermarkets <br/>
          into Efficient and<br/>
          Profitable Enterprises - <br/>
          <span className='text-red-500'>
@@ -41,7 +41,7 @@ const Homebanner = () => {
         </motion.h1>
         <motion.p 
          variants={textVariant(1.4)}
-        className='lg:text-lg xs:text-sm font-medium leading-6 text-purple-800'>
+        className='lg:text-lg xs:text-sm md:text-xs font-medium leading-6 text-purple-800'>
          Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management procurement guidelines and recommendations.
         </motion.p>
       
