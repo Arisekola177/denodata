@@ -22,10 +22,10 @@ const Services = () => {
        
         <motion.p 
          variants={fadeIn ('up', 'tween', 0.2, 2)}
-        className="md:w-[600px] xs:w-full mx-auto mb-4 xs:p-2 md:p-0 text-sm text-justify">
-           Denodata Business Solutions offers retail services to our clients in line with industry standards, 
-           in areas where the requisite  capabilities don not exist, we adopt partnership with stakeholders 
-           in such areas of capabilities to maximize synergy operations.
+        className=" mb-4 xs:p-2 md:p-0 text-sm text-center">
+           Denodata Business Solutions offers retail services to our clients<br /> in line with industry standards, 
+           in areas where the requisite<br />  capabilities don not exist, we adopt partnership with<br /> stakeholders 
+           in such areas of capabilities<br /> to maximize synergy operations.
         </motion.p>
       </div>
 
@@ -87,7 +87,7 @@ const Services = () => {
       >
           <motion.div 
            variants={fadeIn('down', 'tween', 0.3, 3)}
-          className="mt-2">
+          className="mt-2 px-3">
             <h2 className="xs:text-xl md:text-2xl text-center py-4 text-slate-800 font-semibold">
               Assuring you of our <br />
               <span className="text-red-500">best services</span>

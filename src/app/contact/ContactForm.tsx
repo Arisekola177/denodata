@@ -1,12 +1,13 @@
 
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaUser, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { MdEmail, MdLocationPin, MdPhone } from 'react-icons/md';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const FormSchema = z.object({
   fullname: z
@@ -26,14 +27,38 @@ const FormSchema = z.object({
 });
 
 const ContactForm = () => {
+  const [isloading, setIsLoading] = useState<boolean>(false)
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
     resolver: zodResolver(FormSchema)
   });
 
-  const onSubmit = (data: any) => {
-    console.log(data);
-    reset();
+  const onSubmit = async (data: any) => {
+    try {
+      toast('Sending, Please wait.....')
+      setIsLoading(true)
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast.success('Message sent successfully!');
+        setIsLoading(false)
+        reset();
+      } else {
+        toast.error('Failed to send message. Please try again later.');
+        setIsLoading(false)
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast.error('An error occurred. Please try again later.');
+       setIsLoading(false)
+    }
   };
+
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
@@ -81,7 +106,7 @@ const ContactForm = () => {
         <h2 className='text-2xl text-red-500'>Fill The Form Below</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='grid grid-cols-2 gap-4'>
-            <div className='relative col-span-2 md:col-span-1 '>
+            <div className={`relative col-span-2 md:col-span-1  ${errors?.fullname ? 'mb-3' : 'mb-0'}`} >
               <input
                 {...register("fullname")}
                 type="text"
@@ -95,7 +120,7 @@ const ContactForm = () => {
                 </div>
               )}
             </div>
-            <div className='relative col-span-2 md:col-span-1'>
+            <div className={`relative col-span-2 md:col-span-1  ${errors?.email ? 'mb-3' : 'mb-0'}`}>
               <input
                 {...register("email")}
                 type="text"
@@ -109,7 +134,7 @@ const ContactForm = () => {
                 </div>
               )}
             </div>
-            <div className='relative col-span-2 md:col-span-1'>
+            <div className={`relative col-span-2 md:col-span-1  ${errors?.phone ? 'mb-3' : 'mb-0'}`}>
               <input
                 {...register("phone")}
                 type="text"
@@ -123,7 +148,7 @@ const ContactForm = () => {
                 </div>
               )}
             </div>
-            <div className='relative col-span-2'>
+            <div className={`relative col-span-2  ${errors?.message ? 'mb-3' : 'mb-0'}`}>
               <textarea
                 {...register("message")}
                 placeholder="Message"
@@ -137,7 +162,7 @@ const ContactForm = () => {
             </div>
           </div>
           <button type="submit" className="mt-4 py-2 p-8 bg-blue-500 text-white rounded-lg">
-            Submit
+            { isloading ? 'Sending...' : 'Submit'}
           </button>
         </form>
       </div>

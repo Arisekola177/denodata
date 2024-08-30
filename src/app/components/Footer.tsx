@@ -23,17 +23,15 @@ const Footer = () => {
       className="lg:w-10/12 xs:w-11/12 mx-auto flex xs:flex-col md:flex-row gap-4 justify-between py-16 px-8">
           <div className="flex flex-col gap-3">
           <Link href='/'>
-             <div className="flex items-center hover:border-b-[2px] border-slate-800 cursor-pointer">
-              <div className="w-[30px]">
-                 <Image src={logo} alt="logo" className="w-full" />
-              </div>
+             
+              
               <div className="flex flex-col mt-1 ">
              <h1 className="uppercase font-bold xs:text-[14px] lg:text-[18px] leading-none">Denodata</h1>
               <p className="text-[8px] font-mono mt-0">The Retail Store Consultants</p>
               </div>
 
         
-              </div>
+             
               </Link>
                <div className=" xs:mt-5 flex flex-col gap-2">
                  <div className="flex flex-col md:flex-row gap-2">

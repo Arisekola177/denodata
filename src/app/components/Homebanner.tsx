@@ -5,6 +5,7 @@ import box from '../../../public/images/38.png';
 import desktop from '../../../public/images/desktop.png';
 import { motion } from "framer-motion";
 import {fadeIn, slideIn, staggerContainer, textVariant} from '@/app/utils/motion'
+import Link from 'next/link';
 const Homebanner = () => {
 
   return (
@@ -32,19 +33,21 @@ const Homebanner = () => {
       <hr className='w-20 border-b-[2px] border-red-500' /> 
         <motion.h1 
         variants={fadeIn('left', 'tween', 0.2, 1)}
-        className='xl:text-4xl lg:text-3xl md:text-lg xs:text-2xl text-blue-800 font-semibold'>Transforming Supermarkets <br/>
+        className='lg:text-3xl md:text-lg xs:text-2xl text-blue-800 font-semibold'>Transforming Supermarkets <br/>
          into Efficient and<br/>
          Profitable Enterprises - <br/>
          <span className='text-red-500'>
-         Whether You're Starting Out or Scaling Up.
+         Whether You're Starting Out <br/>or Scaling Up.
          </span>
         </motion.h1>
         <motion.p 
          variants={textVariant(1.4)}
-        className='lg:text-lg xs:text-sm md:text-xs font-medium leading-6 text-purple-800'>
+        className='lg:text-xs xs:text-sm md:text-xs xs:w-full  md:w-[400px] font-medium leading-6 text-blue-700'>
          Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management procurement guidelines and recommendations.
         </motion.p>
-      
+        <div className="border-[2px] bg-[#3E3E70] w-40 text-center hover:bg-slate-600 py-2 rounded-md">
+                <Link className=" px-6 text-white   font-semibold" href='/contact'>Contact us</Link> 
+         </div>
         
       </motion.div>
       

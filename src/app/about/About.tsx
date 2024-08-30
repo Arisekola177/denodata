@@ -32,13 +32,11 @@ const About = () => {
         variants={slideIn('left', 'tween', 0.2, 2)}
         className='lg:w-10/12 xs:w-11/12 mx-auto grid py-8 xs:mt-0 grid-cols-1 md:grid-cols-2 gap-6'>
              <div className=''>
-              <TypingText title="About Us" textStyles="text-center md:text-start lg:text-center mb-5"/>
-                <div className='text-justify font-medium'>
+              <TypingText title="About Us" textStyles="text-center md:text-start mb-5"/>
+                <div className='text-justify font-normal leading-8 mt-5'>
                 Denodata Business Solutions is a retail consulting firm aimed at offering top class retail service solutions and consultancy to enable new and growing retail businesses achieve their retail
              objectives thereby boosting profitability and safe guarding company assets. This is achieved through efficient business processes, recruitment, staff training, general inventory management 
              procurement guidelines and recommendations. We keep you abreast of the latest retail information and techniques in retail industry. Denodata Business Solutions has a dedicated team of highly experienced professionals from various aspects of the retail industry bringing their rich ideas innovations, skills practical methods and solutions to retail challenges in order to drive turnover and on the other hand reducing losses to the barest minimum.
-      
-  
             </div>
              </div>
               <div 

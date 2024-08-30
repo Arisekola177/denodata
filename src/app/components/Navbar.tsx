@@ -46,7 +46,7 @@ const Navbar = () => {
                   (<CiMenuFries className="text-xl" />)
                 }
 
-           <div className={`absolute z-[50] top-5 left-0 w-[80%] bg-white transition-all shadow-md duration-500 ease-in-out px-3 py-4 ${open? 'left-0 ':'left-[-490px]'}`}>
+           <div className={`absolute z-[50] top-0 left-0 w-[80%] bg-white transition-all shadow-md duration-500 ease-in-out px-3 py-4 ${open? 'left-0 ':'left-[-490px]'}`}>
             
             <div className='flex justify-between'>
                <div className='flex flex-col gap-4'>
@@ -66,7 +66,7 @@ const Navbar = () => {
                <Link className='text-[10px]' href='/'>Home</Link>
                <Link className='text-[10px]' href='/about'>About</Link>
                <Link className='text-[10px]' href='/service'>Services</Link>
-               <Link className='text-[10px] bg-[#3E3E70] text-white rounded-md py-1 px-3' href='/contact'>Contact</Link>
+               <Link className='text-[10px] bg-[#3E3E70] text-center text-white rounded-md py-1 px-3' href='/contact'>Contact us</Link>
                </div>
                </div>
 

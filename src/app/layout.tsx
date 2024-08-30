@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 import 'leaflet/dist/leaflet.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,6 +28,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );
