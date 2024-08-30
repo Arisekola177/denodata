@@ -3,16 +3,12 @@ import Count from '../components/Count'
 import Link from 'next/link'
 import Achievement from '../components/Achievement'
 import {motion} from 'framer-motion'
-import { fadeIn, slideIn, staggerContainer } from '../utils/motion'
 import { TypingText } from '../components/CustomTexts'
 
 const About = () => {
   return (
     <motion.div
-    variants={staggerContainer(0.2, 0.5)}
-    initial='hidden'
-    whileInView='show'
-    viewport={{once: false, amount: 0.25}}
+   
     className='w-full overflow-hidden'>
         <motion.div 
           
@@ -29,7 +25,6 @@ const About = () => {
  
         <div className='bg-[#F6F8FF]'>
         <motion.div 
-        variants={slideIn('left', 'tween', 0.2, 2)}
         className='lg:w-10/12 xs:w-11/12 mx-auto grid py-8 xs:mt-0 grid-cols-1 md:grid-cols-2 gap-6'>
              <div className=''>
               <TypingText title="About Us" textStyles="text-center md:text-start mb-5"/>
@@ -62,7 +57,7 @@ const About = () => {
          className='lg:w-10/12 md:w-11/12 w-full xs:px-4 md:px-0 mx-auto mt-5'>
             <Count />
       <motion.div 
-          variants={fadeIn('right', 'tween', 0.2, )}
+       
          className='mt-5 grid grid-cols-1 md:grid-cols-3 gap-4 xs:px-4 md:px-0'>
              <div className='bg-[#3E3E70] text-white xs:p-2 md:p-4 lg:p-8 rounded-md shadow-md'>
                   <h1 className='lg:text-2xl text-lg font-bold text-center text-red-500'>Vision</h1>
